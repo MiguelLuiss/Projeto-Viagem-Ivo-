@@ -137,3 +137,5 @@ const routes = [
         pontosTuristicos: ["Santarém", "Parintins", "Itacoatiara"]
     }
 ];
+
+export default routes
