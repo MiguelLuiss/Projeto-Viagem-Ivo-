@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planejador de Viagem</title>
+    <link rel="stylesheet" href="../Projeto-Viagem-Ivo-/styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="planejador">
+        <header class="planejador__header">
+            <h1 class="planejador__title">Planejador de Viagem</h1>
+            <p class="planejador__subtitle">Calcule todos os custos e detalhes da sua próxima viagem</p>
+        </header>
+
+        <main class="planejador__main">
+            <form action="#" class="planejador__form">
+
+                <section class="form-section">
+                    <h2 class="form-section__title">Dados da Viagem</h2>
+                    <div class="form-section__input-group">
+                        <label for="origem">Origem:</label>
+                        <select id="origem" name="origem" required>
+                            <option value="" disabled selected>Selecione a origem</option>
+                        </select>
+                    </div>
+                    <div class="form-section__input-group">
+                        <label for="destino">Destino:</label>
+                        <select id="destino" name="destino" required>
+                            <option value="" disabled selected>Selecione o destino</option>
+                        </select>
+                    </div>
+                    <div class="form-section__info-display">
+                        <p>Distância: <span>- km</span></p>
+                        <p>Pedágios: <span>- praças</span></p>
+                        <p>Valor total pedágios: <span>R$ -</span></p>
+                        <p>Restaurantes no trajeto: <span>-</span></p>
+                        <p>Tempo estimado: <span>-</span></p>
+                        <p>Pontos turísticos: <span>-</span></p>
+                    </div>
+                </section>
+
+                <section class="form-section">
+                    <h2 class="form-section__title">Dados do Veículo</h2>
+                    <div class="form-section__input-group">
+                        <label for="consumo">Consumo do veículo (km/l):</label>
+                        <input type="number" id="consumo" name="consumo" placeholder="Ex: 12.5" step="0.1" required>
+                    </div>
+                    <div class="form-section__input-group">
+                        <label for="preco-combustivel">Preço do combustível (R$/l):</label>
+                        <input type="number" id="preco-combustivel" name="preco-combustivel" placeholder="Ex: 5.89"
+                            step="0.01" required>
+                    </div>
+                    <div class="form-section__input-group">
+                        <label for="velocidade-media">Velocidade média (km/h):</label>
+                        <input type="number" id="velocidade-media" name="velocidade-media" placeholder="Ex: 80"
+                            required>
+                    </div>
+                    <div class="form-section__actions">
+                        <button type="submit" class="button button--primary">Calcular</button>
+                        <button type="reset" class="button button--secondary">Limpar</button>
+                    </div>
+                </section>
+            </form>
+
+            <section class="resultado">
+                <h2 class="resultado__title">Resultados</h2>
+                <div class="resultado__container">
+                    <div class="resultado-card">
+                        <h3 class="resultado-card__title">Combustível</h3>
+                        <p class="resultado-card__item">Litros necessários: <span>-</span></p>
+                        <p class="resultado-card__item">Custo total: <span>-</span></p>
+                    </div>
+                    <div class="resultado-card">
+                        <h3 class="resultado-card__title">Tempo de Viagem</h3>
+                        <p class="resultado-card__item">Tempo estimado: <span>-</span></p>
+                    </div>
+                    <div class="resultado-card">
+                        <h3 class="resultado-card__title">Custos Adicionais</h3>
+                        <p class="resultado-card__item">Pedágios: <span>-</span></p>
+                        <p class="resultado-card__item">Alimentação: <span>-</span></p>
+                    </div>
+                    <div class="resultado-card">
+                        <h3 class="resultado-card__title">Custo Total</h3>
+                        <p class="resultado-card__item">Total da viagem: <span>-</span></p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="planejador__footer">
+            <p>&copy; 2025 Planejador de Viagem - Exemplo de JavaScript Type Module</p>
+        </footer>
+    </div>
+</body>
+</html>
