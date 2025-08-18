@@ -1,0 +1,74 @@
+Requisitos do Projeto
+
+Incluir comentários no código para identificar a colaboração do aluno.
+HTML
+• Utilize tags semânticas para estruturar a página (header, main, section, footer, etc.).
+• Adote a metodologia BEM para nomeação de classes
+(ex: rota__container, rota__titulo, rota__informacoes).
+
+A página DEVE conter:
+• Um header com o título do projeto.
+• Uma seção principal (main) para exibir as rotas disponíveis.
+• Cada rota deve ser apresentada em um card com as informações principais.
+• Um rodapé (footer) com seu nome e a data.
+CSS
+• Crie um arquivo separado para os estilos.
+• Utilize variáveis CSS para definir as cores principais da aplicação (ex: fundo, texto,
+destaque).
+• Aplique um design limpo e responsivo, utilizando sombras, espaçamentos e bordas
+arredondadas para os cards.
+• Use transições suaves em efeitos de hover nos cards.
+
+JavaScript
+
+Estruture o código em módulos.
+• O arquivo routeData.js será fornecido com os dados.
+• Crie módulos separados para funcionalidades (ex: renderRoutes.js, filters.js etc.).
+• Utilize funções de manipulação do DOM para exibir os dados na tela.
+
+Cada card de rota DEVE mostrar:
+• Origem → Destino
+• Distância (km)
+• Número e valor total dos pedágios
+• Restaurantes disponíveis e custo médio
+
+• Tempo estimado da viagem
+• Pontos turísticos
+
+Documentação do Grupo
+
+Além do código, cada grupo deverá entregar um documento de planejamento contendo:
+• Nome de todos os integrantes.
+• Papéis e responsabilidades de cada integrante no projeto (ex: responsável pelo HTML,
+CSS, JavaScript, documentação, testes etc.).
+• Breve descrição de como organizaram a divisão de tarefas e como planejaram o
+desenvolvimento.
+Esse documento será avaliado junto com o código.
+
+
+
+
+Integrantes do grupo:
+
+Miguel Luís Tedeschi de Oliveira
+Miguel Câmara 
+Matheus Alves
+Danillo Mataveli
+Arthur Rampani Costa
+Vitor Terra Bellintani
+
+Papéis e responsabilidades:
+
+Miguel Luís Tedeschi de Oliveira - CSS/Documentação
+Miguel Câmara - JS
+Matheus Alves - JS
+Danillo Mataveli - HTML
+Arthur Rampani Costa - HTML/CSS
+Vitor Terra Bellintani - SUPORTE
+
+
+Como nos organizamos com base nas responsabilidades:
+
+No inicio do projeto, nos reunimos e questionamos as intenções de cada integrante em responsabilidade, no momento todos desejavam fazer a parte do javascript, então com o consenso do grupo foi feito o sorteio das responsabilidades.
+
+
