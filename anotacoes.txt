@@ -44,3 +44,31 @@ CSS, JavaScript, documentação, testes etc.).
 • Breve descrição de como organizaram a divisão de tarefas e como planejaram o
 desenvolvimento.
 Esse documento será avaliado junto com o código.
+
+
+
+
+Integrantes do grupo:
+
+Miguel Luís Tedeschi de Oliveira
+Miguel Câmara 
+Matheus Alves
+Danillo Mataveli
+Arthur Rampani Costa
+Vitor Terra Bellintani
+
+Papéis e responsabilidades:
+
+Miguel Luís Tedeschi de Oliveira - CSS/Documentação
+Miguel Câmara - JS
+Matheus Alves - JS
+Danillo Mataveli - HTML
+Arthur Rampani Costa - HTML/CSS
+Vitor Terra Bellintani - SUPORTE
+
+
+Como nos organizamos com base nas responsabilidades:
+
+No inicio do projeto, nos reunimos e questionamos as intenções de cada integrante em responsabilidade, no momento todos desejavam fazer a parte do javascript, então com o consenso do grupo foi feito o sorteio das responsabilidades.
+
+
