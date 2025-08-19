@@ -40,6 +40,7 @@ destinoSelect.addEventListener("change", () =>{
 
     const rota = routes.filter(route => route.destino === destinoSelecionado)[0];
 
+    document.getElementById('distancia').textContent = `${rota.distancia}`;
     
 });
 
