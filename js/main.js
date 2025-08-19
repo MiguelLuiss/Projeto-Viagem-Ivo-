@@ -33,3 +33,13 @@ origemSelect.addEventListener("change", () => {
         destinoSelect.appendChild(option);
     });
 });
+
+destinoSelect.addEventListener("change", () =>{
+   
+    const destinoSelecionado = destinoSelect.value;
+
+    const rota = routes.filter(route => route.destino === destinoSelecionado)[0];
+
+    
+});
+
