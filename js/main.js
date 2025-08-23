@@ -41,6 +41,15 @@ destinoSelect.addEventListener("change", () =>{
     const rota = routes.filter(route => route.destino === destinoSelecionado)[0];
 
     document.getElementById('distancia').textContent = `${rota.distancia}`;
+
+    document.getElementById('pedagios').textContent = `${rota.pedagios}`;
+
+    document.getElementById('valorPedagios').textContent = `${rota.valorPedagios}`
     
+    document.getElementById('restaurantes').textContent = `${rota.restaurantes}`
+
+    document.getElementById('tempo').textContent = `${rota.tempoEstimado}`
+
+    document.getElementById('pontosTuristicos').textContent = `${rota.pontosTuristicos}`
 });
 
