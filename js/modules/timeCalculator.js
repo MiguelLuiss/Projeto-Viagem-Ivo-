@@ -1,8 +1,7 @@
-import routes from "./routeData.js";
 
-function tempo() {
-    const tempo = routes[8];
-    return tempo;
+export function tempo(distancia, velocidadeMedia) {
+    const tempo = distancia / velocidadeMedia
+    return tempo
 }
 
 console.log(tempo());

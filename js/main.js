@@ -1,6 +1,10 @@
 import routes from "./modules/routeData.js"; 
 import { calcularLitrosNec,calcularCustoTotc } from "./modules/fuelCalculator.js";
 
+import { tempo } from "./modules/timeCalculator.js";
+
+import { custoTotalConta} from "./modules/costCalculator.js";
+
 const origemSelect = document.getElementById("origem");
 const destinoSelect = document.getElementById("destino"); 
 
@@ -62,11 +66,26 @@ function inserir() {
 
     const consumo = document.querySelector('#consumo').value;
     const litrosNecessarios = document.querySelector('#litrosNecessarios')
-    litrosNecessarios.innerHTML = `${calcularLitrosNec(consumo, rota.distancia).toFixed(2)} R$`;
+    litrosNecessarios.innerHTML = `${calcularLitrosNec(consumo, rota.distancia).toFixed(2)}`;
 
     const preco = document.querySelector('#preco-combustivel').value
     const custTotalComb = document.querySelector('#custoTotalCard')
     custTotalComb.textContent= `${calcularCustoTotc(consumo,preco).toFixed(2)} R$`
+
+
+    const tempoEstim = document.querySelector('#tempoCard')
+    const velocidadeMedia = document.querySelector('#velocidade-media').value
+    tempoEstim.textContent = `${tempo(rota.distancia,velocidadeMedia).toFixed(2)} hr`
+
+    const pedagios = document.querySelector('#pedagiosCard')
+    pedagios.textContent = `${rota.valorPedagios} R$`
+
+    const alimentacao = document.querySelector('#alimentacaoCard')
+    alimentacao.textContent = `${rota.custoMedioRefeicao} R$`
+
+    
+    const custTotal = document.querySelector('#totalViagemCard')
+    custTotal.textContent = `${custoTotalConta(calcularCustoTotc(consumo,preco),rota.valorPedagios, rota.custoMedioRefeicao)} R$`
 
 }
 
@@ -74,3 +93,24 @@ const buttonCalc = document.querySelector('.button--primary');
 buttonCalc.addEventListener('click' , () => {
     inserir()
 })
+
+
+function limpar () {
+    const litrosNecessarios = document.querySelector('#litrosNecessarios')
+    litrosNecessarios.innerHTML = ''
+
+    const custTotalComb = document.querySelector('#custoTotalCard')
+    custTotalComb.textContent= ''
+
+    const tempoEstim = document.querySelector('#tempoCard')
+    tempoEstim.textContent = ''
+
+    const pedagios = document.querySelector('#pedagiosCard')
+    pedagios.textContent = ''
+
+    const alimentacao = document.querySelector('#alimentacaoCard')
+    alimentacao.textContent = ''
+
+    const custTotal = document.querySelector('#totalViagemCard')
+    custTotal.textContent = ''
+}
