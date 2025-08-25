@@ -1,7 +1,8 @@
-import routes from "./modules/routeData.js"; // caminho correto
+import routes from "./modules/routeData.js"; 
+import { calcularLitrosNec,calcularCustoTotc } from "./modules/fuelCalculator.js";
 
 const origemSelect = document.getElementById("origem");
-const destinoSelect = document.getElementById("destino"); // ✅ agora está definido
+const destinoSelect = document.getElementById("destino"); 
 
 // extrai todas as origens únicas
 const origensUnicas = new Set(routes.map(route => route.origem));
@@ -53,3 +54,23 @@ destinoSelect.addEventListener("change", () =>{
     document.getElementById('pontosTuristicos').textContent = `${rota.pontosTuristicos}`
 });
 
+
+
+function inserir() {
+    const destinoSelecionado = destinoSelect.value;
+    const rota = routes.filter(route => route.destino === destinoSelecionado)[0];
+
+    const consumo = document.querySelector('#consumo').value;
+    const litrosNecessarios = document.querySelector('#litrosNecessarios')
+    litrosNecessarios.innerHTML = `${calcularLitrosNec(consumo, rota.distancia).toFixed(2)} R$`;
+
+    const preco = document.querySelector('#preco-combustivel').value
+    const custTotalComb = document.querySelector('#custoTotalCard')
+    custTotalComb.textContent= `${calcularCustoTotc(consumo,preco).toFixed(2)} R$`
+
+}
+
+const buttonCalc = document.querySelector('.button--primary');
+buttonCalc.addEventListener('click' , () => {
+    inserir()
+})

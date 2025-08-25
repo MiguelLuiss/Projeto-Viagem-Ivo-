@@ -1,6 +1,6 @@
 // import routes from "./routeData.js";
 
-import routes from "./routeData"
+import routes from "./routeData.js"
 
 // function calcular(consumo,preco,distanciaPercorrida){
 //     const consumoV = 8
@@ -18,18 +18,18 @@ import routes from "./routeData"
 //     console.log(precoTotal)
 // }
 
-export function calcular(consumo,preco,distanciaPercorrida){
-    const consumoV = document.getElementById('consumo')
-    const precoComb = document.getElementById(preco-combustivel)
-    const distancia = routes[3]
-
-    consumo = consumoV
-    preco = precoComb
-    distanciaPercorrida = distancia
-
-    const litrosNecessarios = distancia / consumo
-    const precoTotal = litrosNecessarios * preco
-
+export function calcularLitrosNec(consumo,distanciaPercorrida){
+    const litrosNecessarios = distanciaPercorrida / consumo
     console.log(litrosNecessarios)
-    console.log(precoTotal)
+
+    return litrosNecessarios
 }
+
+export function calcularCustoTotc(consumo,preco){
+    const precoTotal = consumo * preco
+    console.log(preco)
+
+    return precoTotal
+}
+
+
