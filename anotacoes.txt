@@ -64,11 +64,17 @@ Miguel Câmara - JS
 Matheus Alves - JS
 Danillo Mataveli - HTML
 Arthur Rampani Costa - HTML/CSS
-Vitor Terra Bellintani - SUPORTE
+Vitor Terra Bellintani - CSS
 
 
 Como nos organizamos com base nas responsabilidades:
 
 No inicio do projeto, nos reunimos e questionamos as intenções de cada integrante em responsabilidade, no momento todos desejavam fazer a parte do javascript, então com o consenso do grupo foi feito o sorteio das responsabilidades.
+
+Miguel Luis:  Responsavel pela formatação da estrutura e resultados.
+
+Danilo: Responsavel pelo header e dados da viagem.
+
+Arthur: Responsavel pelos dados do veiculo, resultados e footer.
 
 
