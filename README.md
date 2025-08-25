@@ -30,8 +30,5 @@ Dados do Veículo:
 - CSS
 - JavaScript
 
-## 🚀 Acesso para o repositório GitHub
-https://github.com/MiguelLuiss/projeto-viagem-ivo-
-
-## 🚀 Acesso para o site
-https://miguelluiss.github.io/projeto-viagem-ivo-/
+## 🚀 Acesso para o SPA Online
+https://miguelluiss.github.io/projeto-viagem-ivo
