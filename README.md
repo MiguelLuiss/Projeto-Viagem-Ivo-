@@ -31,7 +31,7 @@ Dados do Veículo:
 - JavaScript
 
 ## 🚀 Acesso para o repositório GitHub
-https://github.com/MiguelLuiss/Projeto-Viagem-Ivo-
+https://github.com/MiguelLuiss/projeto-viagem-ivo-
 
 ## 🚀 Acesso para o site
-https://miguelluiss.github.io/Projeto-Viagem-Ivo-/
+https://miguelluiss.github.io/projeto-viagem-ivo-/
