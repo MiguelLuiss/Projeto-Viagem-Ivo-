@@ -77,4 +77,6 @@ Danilo: Responsavel pelo header e dados da viagem.
 
 Arthur: Responsavel pelos dados do veiculo, resultados e footer.
 
+Vitor Terra: Responsavel pelo header e pelo conteúdo de dentro das duas principais div
+
 
