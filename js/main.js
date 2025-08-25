@@ -25,6 +25,8 @@ origemSelect.addEventListener("change", () => {
     // limpa os destinos antigos
     destinoSelect.innerHTML = '<option value="" disabled selected>Selecione o destino</option>';
 
+    limparDadosIniciais ()
+    
     // encontra os destinos válidos para a origem selecionada
     const destinos = routes
         .filter(route => route.origem === origemSelecionada)
@@ -104,7 +106,7 @@ function limpar () {
 
     const tempoEstim = document.querySelector('#tempoCard')
     tempoEstim.textContent = ''
-
+    
     const pedagios = document.querySelector('#pedagiosCard')
     pedagios.textContent = ''
 
@@ -113,4 +115,26 @@ function limpar () {
 
     const custTotal = document.querySelector('#totalViagemCard')
     custTotal.textContent = ''
+
+    const consumo = document.querySelector('#consumo').value = ''
+    const preco = document.querySelector('#preco-combustivel').value = ''
+    const velocidadeMedia = document.querySelector('#velocidade-media').value=''
+
+    const origem = document.querySelector('#origem').value = ''
+    const destino = document.querySelector('#destino').value = ''
 }
+
+function limparDadosIniciais () {
+    document.getElementById('distancia').textContent = '';
+    document.getElementById('pedagios').textContent = '';
+    document.getElementById('valorPedagios').textContent = '';
+    document.getElementById('restaurantes').textContent = '';
+    document.getElementById('tempo').textContent = '';
+    document.getElementById('pontosTuristicos').textContent = '';
+}
+
+const buttonClear = document.querySelector('.button--secondary')
+buttonClear.addEventListener('click', () => {
+    limpar()
+    limparDadosIniciais()
+})
