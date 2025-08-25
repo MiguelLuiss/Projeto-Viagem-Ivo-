@@ -1,0 +1,260 @@
+/* Definição de variáveis de cores e fontes */
+:root {
+            --primary-color: #2980b9;
+            --secondary-color: #e74c3c;
+            --background-color: #f4f7f6;
+            --card-background: #ffffff;
+            --text-color: #333333;
+            --text-color-light: #ffffff;
+            --border-color: #e0e0e0;
+            --shadow-color: rgba(0, 0, 0, 0.08);
+            --font-family: 'Roboto', sans-serif;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* Estilos Globais e Reset */
+*{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* Estrutura Principal do Planejador */
+.planejador {
+            max-width: 900px;
+            margin: 32px auto;
+            padding: 0 1rem;
+        }
+
+.planejador__header {
+            background-color: var(--primary-color);
+            color: var(--text-color-light);
+            padding: 24px;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+        }
+
+.planejador__title {
+            margin-bottom: 8px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* Seções do Formulário */
+        .form-section {
+            background-color: var(--card-background);
+            padding: 32px;
+            margin-bottom: 24px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px var(--shadow-color);
+        }
+
+        .form-section__title {
+            margin-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 14px;
+            font-weight: 500;
+        }
+
+        .form-section__input-group {
+            margin-bottom: 20px;
+        }
+
+        .form-section__input-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .form-section__input-group input,
+        .form-section__input-group select {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            font-family: var(--font-family);
+            font-size: 16px;
+        }
+
+        .form-section__info-display {
+            background-color: var(--text-color-light);
+            border: 1px dashed var(--border-color);
+            border-radius: 4px;
+            padding: 16px;
+            font-size: 16px;
+            color: var(--text-color);
+        }
+
+        .form-section__info-display p {
+            margin-bottom: 8px;
+        }
+
+        .form-section__info-display p:last-child {
+            margin-bottom: 0;
+        }
+
+        .form-section__actions {
+            display: flex;
+            gap: 16px;
+            margin-top: 24px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* Estilos dos Botões */
+        .button {
+            padding: 14px 24px;
+            border: none;
+            border-radius: 4px;
+            color: var(--text-color-light);
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+        }
+
+        .button--primary {
+            background-color: var(--primary-color);
+        }
+
+        .button--primary:hover {
+            background-color: var(--primary-color);
+        }
+
+        .button--secondary {
+            background-color: var(--secondary-color);
+        }
+
+        .button--secondary:hover {
+            background-color: var(--secondary-color);
+        }
+
+
+
+        /* Seção de Resultados */
+        .resultado__title {
+            margin-bottom: 24px;
+        }
+
+        .resultado__container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        .resultado-card {
+            background-color: var(--card-background);
+            padding: 24px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px var(--shadow-color);
+            border-top: 4px solid var(--primary-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .resultado-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-color);
+        }
+
+        .resultado-card__title {
+            font-size: 18px;
+            margin-bottom: 16px;
+            font-weight: 500;
+        }
+
+        .resultado-card__item {
+            font-size: 16px;
+        }
+
+        /* Rodapé */
+        .planejador__footer {
+            text-align: center;
+            margin-top: 32px;
+            padding: 16px;
+            font-size: 15px;
+            color: var(--text-color);
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .results__container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 576px) {
+            .results__container {
+                grid-template-columns: 1fr;
+            }
+
+            .form-section__actions {
+                flex-direction: column;
+            }
+
+            .button {
+                width: 100%;
+            }
+        }
