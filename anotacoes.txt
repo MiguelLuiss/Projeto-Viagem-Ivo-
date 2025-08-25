@@ -63,7 +63,7 @@ Miguel Luís Tedeschi de Oliveira - CSS/Documentação
 Miguel Câmara - JS
 Matheus Alves - JS
 Danillo Mataveli - HTML
-Arthur Rampani Costa - HTML/CSS
+Arthur Rampani Costa - HTML
 Vitor Terra Bellintani - CSS
 
 
